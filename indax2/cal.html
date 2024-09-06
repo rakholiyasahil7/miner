@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coal Mine Data Calculator</title>
+    <link rel="stylesheet" href="cl.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Coal Mine Data Calculator</h1>
+
+        <form id="calculator-form">
+            <!-- Coal Production Input -->
+            <label for="coalProduction">Total Coal Production (Tons):</label>
+            <input type="number" id="coalProduction" placeholder="Enter coal production in tons" required>
+
+            <!-- Cost Per Ton Input -->
+            <label for="costPerTon">Cost Per Ton ($):</label>
+            <input type="number" id="costPerTon" placeholder="Enter cost per ton" required>
+
+            <!-- Selling Price Per Ton Input -->
+            <label for="sellingPricePerTon">Selling Price Per Ton ($):</label>
+            <input type="number" id="sellingPricePerTon" placeholder="Enter selling price per ton" required>
+
+            <!-- Buttons -->
+            <button type="submit">Calculate</button>
+            <button type="reset">Reset</button>
+        </form>
+
+        <!-- Result Section -->
+        <div id="result" class="result">
+            <h2>Calculation Results:</h2>
+            <p id="totalCost">Total Cost: $0</p>
+            <p id="totalRevenue">Total Revenue: $0</p>
+            <p id="totalProfit">Total Profit: $0</p>
+        </div>
+    </div>
+
+    <script src="cl.js"></script>
+</body>
+</html>

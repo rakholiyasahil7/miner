@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Data Analysis - Coal Mine</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Coal Mine Stock Data Analysis</h1>
+
+        <!-- Data Table -->
+        <table id="stock-table">
+            <thead>
+                <tr>
+                    <th>Mine Name</th>
+                    <th>Total Stock (Tons)</th>
+                    <th>Coal Grade</th>
+                    <th>Last Updated</th>
+                </tr>
+            </thead>
+            <tbody id="stock-data">
+                <!-- Stock data will be added here -->
+            </tbody>
+        </table>
+
+        <!-- Bar Chart -->
+        <h2>Stock Data (Bar Chart)</h2>
+        <canvas id="barChart"></canvas>
+
+        <!-- Line Chart -->
+        <h2>Stock Data Over Time (Line Chart)</h2>
+        <canvas id="lineChart"></canvas>
+
+        <a href="stock_entry.html" class="analysis-link">Back to Stock Entry</a>
+    </div>
+
+    <script src="analysis.js"></script>
+</body>
+</html>
